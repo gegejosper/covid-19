@@ -1,0 +1,707 @@
+$bgry = [Barongcot"," Bugwak"," 
+Dolorosa"," Kapalaran"," Kianggat"," 
+Lourdes"," Macarthur"," Miaray"," 
+Migcuya"," New Visayas"," Osmeña"," 
+Poblacion"," Sagbayan"," San Vicente];
+
+$bgry = [Ani-e"," Aposkahoy"," Bulahan"," 
+Cabacungan"," Pelaez"," Gumaod"," Hinaplanan"," 
+Kalawitan"," Lanise"," Luna"," Madaguing"," Malagana","
+Minalwang"," Mat-I","Panampawan"," Parmbugas"," 
+Patrocinio"," Plaridel"," Poblacion"," Punong"," Rizal","
+Santa Cruz","Tamboboan"," Tipolohon];
+
+$brgy = [Alindahaw"," Baclay"," Balimbingan"," 
+Buenasuerte"," Camanga"," Curvada"," Laperian"," Libertad"," 
+Lower Bayao"," Luy-a"," Manilan"," Manlayag"," Militar","
+Navalan"," Panduma Senior"," Sambulawan","San Antonio"," San Carlos"," 
+Santo Niño"," Santo Rosario"," Sugod"," Tabuan"," Tagulo"," Tinotungan"," Upper Bayao];
+
+
+$bgry = [Baikingon"," Balulang"," Balulang"," Bayabas"," Bayanga"," 
+Besigan"," Bonbon"," Bulua"," Canitoan"," Carmen"," Dansolihon"," 
+Iponan"," Kauswagan"," Lumbia"," Mambuaya"," Pagalungan","
+Pagatpat"," Patag"," Pigsag-an"," San Simon"," Taglimao"," Tagpangi"," 
+Tignapoloan"," Tuburan"," Tumpagon"," Agusan"," Balubal"," Bugo"," 
+Camaman-an"," Consolacion"," Cugman"," F.S. Catanico"," Gusa"," 
+Indahag"," Lapasan"," Macabalan"," Macasandig"," Nazareth"," Puerto","
+Puntod"," Tablon"," Barangay 1"," Barangay 2"," Barangay 3"," Barangay 4","
+Barangay 4"," Barangay 5"," Barangay 6"," Barangay 7"," Barangay 8"," Barangay 9","
+Barangay 10"," Barangay 11"," Barangay 12"," Barangay 13"," Barangay 14"," Barangay 15","
+Barangay 16"," Barangay 17"," Barangay 18"," Barangay 19"," Barangay 20"," Barangay 21"," 
+Barangay 22"," Barangay 23"," Barangay 24"," Barangay 25"," Barangay 26"," Barangay 27","
+Barangay 28"," Barangay 29"," Barangay 30"," Barangay 31"," Barangay 32"," Barangay 33"," 
+Barangay 34"," Barangay 35"," Barangay 36"," Barangay 37"," Barangay 38"," Barangay 39","
+Barangay 40];
+
+
+$brgy = [Agay-ayan"," Alagatan"," Anakan"," Bagubad"," Bakidbakid"," 
+Bal-ason","Bantaawan"," Binakalan"," Capitulangan"," Daan-Lungsod","
+Dinawehan"," Eureka"," Hindangon"," Kalagonoy"," Kalipay"," Kamanikan
+Kianlagan"," Kibuging"," Kipuntos"," Lawaan"," Lawit"," Libertad"," Libon"," 
+Lunao"," Lunotan"," Malibud"," Malinao"," Maribucao"," Mimbuntong"," Mimbalagon","
+Mimbunga"," Minsapinit"," Murallon"," Odiongan"," Pangasihan"," Pigsaluhan","
+Punong"," Ricoro"," Samay"," Sangalan"," San Jose"," San Juan"," San Luis"," San Miguel","
+Santiago"," Tagpako"," Talisay"," Talon"," Tinabalan"," Tinulongan"," Barangay 1"," Barangay 2","
+Barangay 3"," Barangay 4"," Barangay 5"," Barangay 6"," Barangay 7"," Barangay 8"," Barangay 9","
+Barangay 10"," Barangay 11"," Barangay 12"," Barangay 13"," Barangay 14"," Barangay 15"," 
+Barangay 16"," Barangay 17"," Barangay 18"," Barangay 18-A"," Barangay 19"," Barangay 20"," Barangay 21","
+Barangay 22"," Barangay 22-A"," Barangay 23"," Barangay 24"," Barangay 24-A"," Barangay 25"," Barangay 26];
+
+$brgy = [Balon","Balon"," Barra"," Basirang"," Bongabong","Buenavista"," Cabol-anonan"," 
+Cahayag"," Camating"," Canibungan Proper"," Casilak San Agustin"," Centro Hulpa"," Centro Napu","
+Centro Upper"," Colambutan Bajo"," Calambutan Settlement"," Duanguican"," Gala"," Gumbil","
+Locso-on"," Maikay"," Maribojoc"," Mitugas"," Nailon"," Namut"," Napurog"," Pan-ay Diot"," San Nicolas","
+Sebac"," Silongon"," Sinuza"," Taguima"," Tigdok"," Yahong];
+
+$brgy = [Acad"," Alang-alang"," Alegria"," Anonang","Bagong Mandaue"," Bagong Maslog","
+Bagong Oslob"," Bagong Pitogo"," Baki"," Balas"," Balide"," Balintawak"," Bayabas"," Bemposa","
+Cabilinan"," Campo Uno"," Ceboneg"," Commonwealth"," Gubaan"," Inasagan"," Inroad"," Kahayagan East","
+Kahayagan West"," Kauswagan"," La Paz"," La Victoria"," Lantungan"," Libertad"," Lintugop"," Lubid"," Maguikay","
+Mahayahay"," Monte Alegre"," Montela"," Napo"," Panaghiusa"," Poblacion"," 
+Resthouse","Romarate"," San Jose"," San Juan"," Sapa Loboc"," Tagulalo"," Waterfall];
+
+
+Kolambugan
+
+
+$brgy = [Austin Heights"," Baybay"," Bubong"," Caromatan"," Inudaran"," Kulasihan"," Libertad"," Lumbac"," 
+Manga"," Matampay"," Mukas"," Muntay"," Pagalungan"," Palao"," Pantaon"," Pantar"," Poblacion"," Rebucon"," Riverside","
+San Roque"," Santo Nino"," Simbuco"," Small Banisilan"," Sucodan"," Tabigue"," Titunod];
+
+
+Nabunturan
+$brgy = [Anislagan"," Antequera"," Basak"," Bayabas"," Bukal"," Cabacungan"," Cabidianan"," Katipunan","
+Libasan"," Linda"," Magading"," Magsaysay"," Mainit"," Manat"," Matilo"," Mipangi"," New Dauis"," New Sibonga"," 
+Ogao"," Pangutosan"," Poblacion"," San Isidro"," San Roque"," San Vicente"," Santa Maria"," Santo Nino"," 
+Sasa"," Tagnocon];
+
+MargosaTubig
+$brgy = [Balintawak"," Bularong"," Digon"," Guinimanan"," Igat Island"," Josefina"," Kalian"," 
+San Roque"," Limamawan"," Limbatong"," Lumbog"," Magahis"," Poblacion"," Sagua"," Talanusa"," Tiguian"," Tulapok];
+
+Kitaotao
+
+$brgy = [Balangigay"," Balukbukan"," Bershiba"," Bobong"," Bolocaon"," Cabalantian"," Calapaton","
+Sinaysayan"," Kahusayan"," Kalumihan","Kauyonan"," Kimolong"," Kitaihon"," Kitobo","
+Magsaysay"," Malobalo"," Metebagao"," Sagundanon"," Pagan"," Panganan"," Poblacion"," San Isidro","
+San Lorenzo"," Santo Rosario"," Sinuda"," Tandong"," Tawas"," White Kulaman"," Napalico"," Digongan"," Kiulom"," 
+Binoongan"," Kipilas"," East Dalurong"," West Dalurong];
+
+Lapuyan
+
+$brgy ="Bulawan","Danganan","Dansal","Dumara","Karpok",""Lenok Madalum"","Luanan","Lubusan","Mahalingeb","Mandeg","Maralag","Maruing","Molum","Pampang","Pantad","Pingalay","Poblacion","Salambuyan",""San Jose"","Sayog","Tabon","Talabob","Tiguha","Tininghalang","Tipasan","Tugaya
+
+
+
+Bayog
+
+"Baking",
+"Balukbahan",
+"Balumbunan",
+"Bantal",
+"Bobuan",
+"Camp Blessing",
+"Canoayan",
+"Conacon",
+"Dagum",
+"Damit",
+"Datagan",
+"Depase",
+"Dipili",
+"Depore",
+"Deporehan",
+"Dimalinao",
+"Kahayagan",
+"Kanipaan",
+"Lamare",
+"Liba",
+"Matin ao",
+"Matun og",
+"San Isidro",
+"Poblacion",
+"Pulang Bato",
+"Salawagan",
+"Sigacad",
+"Supon",
+
+
+Dimataling
+
+'Bacayawan',
+'Baha',
+'Balanagan',
+'Baluno',
+'Binuay',
+'Buburay',
+'Grap',
+'Josefina',
+'Kagawasan',
+'Lalab',
+'Libertad',
+'Magahis',
+'Mahayag',
+'Mercedes',
+'Poblacion',
+'Saloagan',
+'San Roque',
+'Sugbay Uno',
+'Sumbato',
+'Sumpot',
+'Tinggabulong',
+'Tiniguangan',
+'Tipangi',
+'Upper Ludiong'
+
+Dinas
+
+'Bacawan',
+'Benuatan',
+'Beray',
+'Don Jose',
+'Dongos',
+'East Migpulao',
+'Guinicolalay',
+'Ignacio Garrata',
+'Kinakap',
+'Legarda 1',
+'Legarda 2',
+'Legarda 3',
+'Lower Dimaya',
+'Locuban',
+'Ludiong',
+'Nangka',
+'Nian',
+'Old Mirapao',
+'Pisa an',
+'Poblacion',
+'Proper Dimaya',
+'Sagacad',
+'Sambulawan',
+'San Isidro',
+'Sungayan',
+'Sumpotan',
+'Tarakan',
+'Upper Dimaya',
+'Upper Sibul',
+'West Migpulao'
+
+Dumalinao
+
+'Anonang',
+'Bagong Misamis',
+'Bag ong Silao',
+'Baga',
+'Baloboan',
+'Banta ao',
+'Bibilik',
+'Calingayan',
+'Camalig',
+'Camanga',
+'Cuatro cuatro',
+'Locuban',
+'Malasik',
+'Mama',
+'Matab ang',
+'Mecolong',
+'Metokong',
+'Motosawa',
+'Pag asa',
+'Paglaum',
+'Pantad',
+'Piniglibano',
+'Rebokon',
+'San Agustin',
+'Sebucao',
+'Sumadat',
+'Tikwas',
+'Tina',
+'Tubo Pait',
+'Upper Dumalinao'
+
+
+Dumingag
+
+'Bagong Valencia',
+'Bagong Kauswagan',
+'Bagong Silangan',
+'Bucayan',
+'Calumanggi',
+'Canibongan',
+'Caridad',
+'Danlugan',
+'Dapiwak',
+'Datu Totoca',
+'Dilud',
+'Ditulan',
+'Dulian',
+'Dulop',
+'Guintananan',
+'Guitran',
+'Gumpingan',
+'La Fortuna',
+'Labangon',
+'Libertad',
+'Licabang',
+'Lipawan',
+'Lower Landing',
+'Lower Timonan',
+'Macasing',
+'Mahayahay',
+'Malagalad',
+'Maralag',
+'Marangan',
+'New Basak',
+'Saad',
+'Salvador',
+'San Juan',
+'San Pablo',
+'San Pedro',
+'San Vicente',
+'Senote',
+'Sinonok',
+'Sunop',
+'Tagun',
+'Tamurayan',
+'Upper Landing',
+'Upper Timonan'
+
+Guipos
+
+'Bagong Oroquieta',
+'Baguitan',
+'Balongating',
+'Canunan',
+'Dacsol',
+'Dagohoy',
+'Dalapang',
+'Datagan',
+'Guling',
+'Katipunan',
+'Lintum',
+'Litan',
+'Magting',
+'Poblacion',
+'Regla',
+'Sikatuna',
+'Singclot'
+
+Josefina
+
+'Bogo Calabat',
+'Dawa',
+'Ebarle',
+'Gumahan',
+'Leonardo',
+'Litapan',
+'Lower Bagong Tudela',
+'Mansanas',
+'Moradji',
+'Nemeño',
+'Nopulan',
+'Sebukang',
+'Tagaytay Hill',
+'Upper Bagong Tudela'
+
+Kumalarang
+
+'Bogayo',
+'Bolisong',
+'Boyugan East',
+'Boyugan West',
+'Bualan',
+'Diplo',
+'Gawil',
+'Gusom',
+'Kitaan Dagat',
+'Lantawan',
+'Limamawand',
+'Mahayahay',
+'Pangi',
+'Picanan',
+'Poblacion',
+'Salagmanok',
+'Secade',
+'Suminalum'
+
+Labangan
+
+'Bagalupa',
+'Balimbingan',
+'Binayan',
+'Bokong',
+'Bulanit',
+'Cogonan',
+'Combo',
+'Dalapang',
+'Dimasangca',
+'Dipaya',
+'Langapod',
+'Lantian',
+'Lower Campo Islam',
+'Lower Pulacan',
+'Lower Sang-an',
+'New Labangan',
+'Noboran',
+'Old Labangan',
+'San Isidro',
+'Santa Cruz',
+'Tapodoc',
+'Tawagan Norte',
+'Upper Campo Islam',
+'Upper Pulacan',
+'Upper Sang-an'
+
+
+Lakewood
+
+'Bagong Kahayag',
+'Baking',
+'Biswangan',
+'Bululawan',
+'Dagum',
+'Gasa',
+'Gatub',
+'Lukuan',
+'Matalang',
+'Poblacion',
+'Sapang Pinoles',
+'Sebuguey',
+'Tiwales',
+'Tubod'
+
+Mahayag
+
+'Bagong Balamban',
+'Bagong Dalaguete',
+'Boniao',
+'Delusom',
+'Diwan',
+'Guripan',
+'Kaangayan',
+'Kabuhi',
+'Lourmah',
+'Lower Salug Daku',
+'Lower Santo Nino',
+'Malubo',
+'Manguiles',
+'Marabanan',
+'Panagaan',
+'Paraiso',
+'Pedagan',
+'Pugwan',
+'Poblacion',
+'San Isidro',
+'San Jose',
+'San Vicente',
+'Santa Cruz',
+'Sicpao',
+'Tuboran',
+'Tulan',
+'Tumapic',
+'Upper Salug Daku',
+'Upper Santo Nino'
+
+Midsalip
+
+'Bacahan',
+'Balonai',
+'Bibilop',
+'Buloron',
+'Cabaloran',
+'Canipay Norte',
+'Canipay Sur',
+'Cumarom',
+'Dakayakan',
+'Duelic',
+'Dumalinao',
+'Ecuan',
+'Golictop',
+'Guinabot',
+'Guitalos',
+'Guma',
+'Kahayagan',
+'Licuro-an',
+'Lumpunid',
+'Matalang',
+'New Katipunan',
+'New Unidos',
+'Palili',
+'Pawan',
+'Pili',
+'Pisompongan',
+'Piwan',
+'Poblacion A',
+'Poblacion B',
+'Sigapod',
+'Timbaboy',
+'Tulbong',
+'Tuluan'
+
+Molave
+
+'Alicia',
+'Ariosa',
+'Bagong Argao',
+'Bagong Gutlang',
+'Blancia',
+'Bogo Capalaran',
+'Culo',
+'Dalaon',
+'Dipolo',
+'Dontulan',
+'Gonosan',
+'Lower Dimalinao',
+'Pablo Bahinting Sr',
+'Mabuhay',
+'Madasigon',
+'Makuguihon',
+'Maloloy on',
+'Miligan',
+'Parasan',
+'Rizal',
+'Santo Rosario',
+'Silangit',
+'Simata',
+'Sudlon',
+'Upper Dimorok'
+
+Pitogo
+
+'Balabawan',
+'Balong balong',
+'Colojo',
+'Liasan',
+'Liguac',
+'Limbayan',
+'Lower Paniki an',
+'Matin-ao',
+'Panubigan',
+'Poblacion',
+'Punta Flecha',
+'Sugbay Dos',
+'Tongao',
+'Upper Paniki an',
+'San Isidro'
+
+Ramon Magsaysay
+
+'Bagong Opon',
+'Bambong Daku',
+'Bambong Diut',
+'Bobongan',
+'Campo IV',
+'Campo V',
+'Caniangan',
+'Dipalusan',
+'Eastern Bobongan',
+'Esperanza',
+'Gapasan',
+'Katipunan',
+'Kauswagan',
+'Lower Sambulawan',
+'Mabini',
+'Magsaysay',
+'Malating',
+'Paradise',
+'Pasingkalan',
+'Poblacion',
+'San Fernando',
+'Santo Rosario',
+'Sapa Anding',
+'Sinaguing',
+'Switch',
+'Upper Laperian',
+'Wakat'
+
+San Miguel
+
+'Betinan',
+'Bulawan',
+'Calube',
+'Concepcion',
+'Dao an',
+'Dumalian',
+'Fatima',
+'Langilan',
+'Lantawan',
+'Laperian',
+'Libuganan',
+'Limonan',
+'Mati',
+'Ocapan',
+'Poblacion',
+'San Isidro',
+'Sayog',
+'Tapian'
+
+San Pablo
+
+'Bagong Misamis',
+'Bubual',
+'Buton',
+'Culasian',
+'Daplayan',
+'Kalilangan',
+'Kapamanok',
+'Kondum',
+'Lumbayao',
+'Mabuhay',
+'Marcos Village',
+'Miasin',
+'Molansong',
+'Pantad',
+'Pao',
+'Payag',
+'Poblacion',
+'Pongapong',
+'Sacbulan',
+'Sagasan',
+'San Juan',
+'Senior',
+'Songgoy',
+'Tandubuay',
+'Taniapan',
+'Ticala Island',
+'Tubo pait',
+'Villakapa'
+
+Sominot
+
+
+'Bag ong Baroy',
+'New Oroquieta',
+'Barubuhan',
+'Bulanay',
+'Datagan',
+'Eastern Poblacion',
+'Lantawan',
+'Libertad',
+'Lumangoy',
+'New Carmen',
+'Picturan',
+'Poblacion',
+'Rizal',
+'San Miguel',
+'Santo Niño',
+'Sawa',
+'Tungawan',
+'Upper Sicpao'
+
+Tabina
+
+'Abong abong',
+'Baganian',
+'Baya-baya',
+'Capisan',
+'Concepcion',
+'Culabay',
+'Doña Josefina',
+'Lumbia',
+'Mabuhay',
+'Malim',
+'Manicaan',
+'New Oroquieta',
+'Poblacion',
+'San Francisco',
+'Tultolan'
+
+Tambulig
+
+'Alang alang',
+'Angeles',
+'Bagong Kauswagan',
+'Bagong Tabogon',
+'Balugo',
+'Cabgan',
+'Calolot',
+'Dimalinao',
+'Fabian',
+'Gabunon',
+'Happy Valley',
+'Kapalaran',
+'Libato',
+'Limamaan',
+'Lower Liasan',
+'Lower Lodiong',
+'Lower Tiparak',
+'Lower Usogan',
+'Maya maya',
+'New Village,',
+'Pelocuban',
+'Riverside',
+'Sagrada Familia',
+'San Jose',
+'San Vicente',
+'Sumalig',
+'Tuluan',
+'Tungawan',
+'Upper Liaison',
+'Upper Lodiong',
+'Upper Tiparak'
+
+
+Tigbao
+
+'Begong',
+'Busol',
+'Caluma',
+'Diana Countryside',
+'Guinlin',
+'Lacarayan',
+'Lacupayan',
+'Libayoy',
+'Limas',
+'Longmot',
+'Maragang',
+'Mati',
+'Nangan nangan',
+'New Tuburan',
+'Nilo',
+'Tigbao',
+'Timolan',
+'Upper Nilo'
+
+Vincenzo Sagun
+
+'Ambulon',
+'Biu os',
+'Cogon',
+'Danan',
+'Kabatan',
+'Kapatagan',
+'Limason',
+'Linoguayan',
+'Lumbal',
+'Lunib',
+'Maculay',
+'Maraya',
+'Sagucan',
+'Waling waling'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
